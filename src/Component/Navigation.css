@@ -1,0 +1,13 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: rgb(36, 36, 36) !important;
+    padding: 1rem;
+}
+
+.logo{
+    width: 2.5rem;
+}

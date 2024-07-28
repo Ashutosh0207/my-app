@@ -1,0 +1,19 @@
+.centerPage{
+    background-color: rgb(49, 49, 49);
+    padding: 30px;
+}
+
+.qr_img{
+    width: 50%;
+}
+
+.qr_btn{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.center-page-title{
+    color: white;
+    text-align: center;
+}

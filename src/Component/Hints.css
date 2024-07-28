@@ -1,0 +1,24 @@
+.hint_container{
+    background: linear-gradient(115deg, rgba(224, 86, 253, 1) 0%, rgba(19, 19, 19, 1) 31%);
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    border: 3px solid white ;
+    border-radius: 10px;
+}
+
+.hint_text{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+.hint_title{
+    text-align: center;
+    color: white;
+}
+
+.hint_section{
+    background-color: rgb(49, 49, 49);
+    padding: 15px 0;
+}
