@@ -7,10 +7,30 @@ import Hints from './Component/Hints';
 import Leaderboard from './Component/Leaderboard';
 import Questions from './Component/Questions';
 import Footer from './Component/Footer';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [backendData, setBackendData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => {
+        setBackendData(data)
+      }
+    )
+  }, [])
+
   return (
     <>
+      {(typeof backendData.users === 'undefined') ? (
+        <p>Loading...</p>
+      ) : (
+        backendData.users.map(user=> 
+          <p>{user}</p>
+        )
+      )}
       <Navigation />
       <CenterPage />
       <Hints />
